@@ -11,6 +11,15 @@ $footer: #151414;
 $primary: $ltblue-dark;
 $secondary: $ltblue-light;
 
+// FILL
+
+.primary-color-fill {
+  fill: $primary;
+}
+.secondary-color-fill {
+  fill: $secondary;
+}
+
 // ACCORDION OVERRIDES
 $accordion-padding-y: 1.5rem;
 $accordion-padding-x: 1.5rem;
