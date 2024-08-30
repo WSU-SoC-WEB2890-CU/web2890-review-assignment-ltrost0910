@@ -4,7 +4,7 @@
 .intro-section {
   @include gradient;
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)),
-    url("../../images/arts/intro-section-hands-typing-unsplash.jpg");
+    url("/images/arts/intro-section-hands-typing-unsplash.jpg");
   background-size: cover;
   background-position: center;
   height: 20rem; /* 45rem; 100%; */
