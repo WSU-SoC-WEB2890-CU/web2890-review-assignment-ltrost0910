@@ -13,22 +13,19 @@
   height: 100%;
 }
 
-.intros {
-  .video-box {
-    position: relative;
+.circle-container {
+  width: 200px; /* Set the width and height to your desired circle size */
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
 
-    a {
-      span {
-        height: 6rem;
-        line-height: 6rem;
-
-        i {
-          font-size: 6rem;
-          color: $orange;
-        }
-      }
-    }
-  }
+.circle-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+  object-position: center; /* Center the image */
 }
 
 .border-animation {
