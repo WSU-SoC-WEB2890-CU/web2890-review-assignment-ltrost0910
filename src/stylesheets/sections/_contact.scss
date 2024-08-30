@@ -1,7 +1,7 @@
-@use '../custom'as *;
-@use '../components/mixins'as *;
+@use "../custom" as *;
+@use "../components/mixins" as *;
 
-.get-started {
+.contact {
   padding: 4rem 0;
   background-color: $gray-200;
 }
@@ -28,7 +28,7 @@
   }
 }
 
-// FORM CONTENT 
+// FORM CONTENT
 .form {
   padding: 3rem;
 
