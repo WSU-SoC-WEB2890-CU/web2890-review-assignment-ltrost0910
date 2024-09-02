@@ -22,3 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+//alert for contact form submit button
+document.getElementById("submitButton").addEventListener("click", function () {
+  var alertElement = document.getElementById("successAlert");
+  alertElement.classList.remove("d-none"); // Remove the d-none class to show the alert
+});
