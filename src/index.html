@@ -7,8 +7,12 @@
     <meta name="robots" content="index,follow" />
     <meta name="description" content="A portfolio of work by Linda Trost" />
     <title>Linda Trost Portfolio</title>
-
     <link rel="stylesheet" href="./stylesheets/main.scss" />
+    <link
+      rel="preload"
+      href="/images/arts/intro-section-hands-typing-unsplash.png"
+      as="image"
+    />
   </head>
 
   <body>
@@ -53,55 +57,53 @@
 
     <!-- THE INTRO SECTION -->
     <section id="home" class="intro-section">
-      <div class="container">
-        <div class="row align-items-center text-white">
-          <div class="col-md-12 text-center">
-            <h1 class="display-2">
-              <span class="display-2--intro fw-light">Welcome!</span>
-              <span class="display-2--description lh-base px-3">
-                My name is Linda Trost.<br />I provide web solutions for small
-                businesses and non-profit organizations using HTML, WordPress
-                and Wix in Ogden, Utah.
-              </span>
-            </h1>
-            <div class="d-flex justify-content-center pt-4">
-              <!-- <button type="button" class="rounded-pill btn-rounded">
-                Get in Touch
-                <span><i class="bi bi-arrow-right"></i></span>
-              </button> -->
-              <a class="btn rounded-pill btn-rounded" href="#contact">
-                Get in Touch
-                <span><i class="bi bi-arrow-right"></i></span>
-              </a>
+      <div class="hero">
+        <div class="container">
+          <div class="row align-items-center text-white">
+            <div class="col-md-12 text-center">
+              <h1 class="display-2">
+                <span class="display-2--intro fw-light">Welcome!</span>
+                <span class="display-2--description lh-base px-3">
+                  My name is Linda Trost.<br />I provide web solutions for small
+                  businesses and non-profit organizations using HTML, WordPress
+                  and Wix in Ogden, Utah.
+                </span>
+              </h1>
+              <div class="d-flex justify-content-center pt-4">
+                <a class="btn rounded-pill btn-rounded" href="#contact">
+                  Get in Touch
+                  <span><i class="bi bi-arrow-right"></i></span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+        <!-- wavy line on bottom.  made the viewport 249 instead of 250 to avoid overlapping grey line that was shown -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 230">
+          <path
+            class="primary-color-fill"
+            fill-opacity="1"
+            d="M0,64L48,90.7C96,117,192,171,288,192C384,213,480,203,576,170.7C672,139,768,85,864,96C960,107,1056,181,1152,229.3C1248,277,1344,299,1392,250L1440,250L1440,250L1392,250C1344,250,1248,250,1152,250C1056,250,960,250,864,250C768,250,672,250,576,250C480,250,384,250,288,250C192,250,96,250,48,250L0,250Z"
+          ></path>
+          <path
+            class="secondary-color-fill"
+            fill-opacity="1"
+            d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,250L1392,250C1344,250,1248,250,1152,250C1056,250,960,250,864,250C768,250,672,250,576,250C480,250,384,250,288,250C192,250,96,250,48,250L0,250Z"
+          ></path>
+        </svg>
       </div>
-      <!-- wavy line on bottom.  made the viewport 249 instead of 250 to avoid overlapping grey line that was shown -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 249">
-        <path
-          class="primary-color-fill"
-          fill-opacity="1"
-          d="M0,64L48,90.7C96,117,192,171,288,192C384,213,480,203,576,170.7C672,139,768,85,864,96C960,107,1056,181,1152,229.3C1248,277,1344,299,1392,250L1440,250L1440,250L1392,250C1344,250,1248,250,1152,250C1056,250,960,250,864,250C768,250,672,250,576,250C480,250,384,250,288,250C192,250,96,250,48,250L0,250Z"
-        ></path>
-        <path
-          class="secondary-color-fill"
-          fill-opacity="1"
-          d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,250L1392,250C1344,250,1248,250,1152,250C1056,250,960,250,864,250C768,250,672,250,576,250C480,250,384,250,288,250C192,250,96,250,48,250L0,250Z"
-        ></path>
-      </svg>
     </section>
 
     <!-- THE ABOUT SECTION -->
     <section id="about">
       <!-- <div class="container border border-primary p-5"> -->
-      <div class="container border p-5">
+      <div class="container pt-5 px-5 pb-0 mb-0">
         <div class="row text-center">
           <h1 class="display-3 fw-bold">About</h1>
           <div class="heading-line mb-4"></div>
         </div>
-        <div class="row pt-2 pb-2 mt-0 mb-3 align-items-center">
-          <div class="col-md-4 border-right">
+        <div class="row pt-4 pb-0 my-0 py-5 align-items-center">
+          <div class="col-md-4 border-right border-dark">
             <div class="bg-white">
               <div class="circle-container mx-auto">
                 <img
@@ -131,7 +133,7 @@
         </div>
       </div>
       <!-- wavy line on bottom.  made the viewport 249 instead of 250 to avoid overlapping grey line that was shown -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 249">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 230">
         <path
           class="primary-color-fill"
           fill-opacity="1"
@@ -310,7 +312,7 @@
         </div>
       </div>
       <!-- wavy line on bottom.  made the viewport 249 instead of 250 to avoid overlapping grey line that was shown -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 249">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 230">
         <path
           class="primary-color-fill"
           fill-opacity="1"
@@ -400,13 +402,20 @@
                   </button>
                 </div>
               </form>
+
               <!-- Hidden Bootstrap alert element -->
               <div
-                class="alert alert-success mt-3 d-none"
-                id="successAlert"
+                class="alert alert-success alert-dismissible fade show mt-3 d-none"
                 role="alert"
+                id="successAlert"
               >
                 Success! Your form has been submitted.
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                  aria-label="Close"
+                ></button>
               </div>
             </div>
           </div>
