@@ -92,16 +92,18 @@
 
     <!-- THE ABOUT SECTION -->
     <section id="about">
-      <!-- <div class="container border border-primary p-5"> -->
       <div class="container pt-5 px-5 pb-0 mb-0">
         <div class="row text-center">
           <h1 class="display-3 fw-bold">About</h1>
           <div class="heading-line mb-4"></div>
         </div>
-        <div class="row pt-4 pb-0 my-0 py-5 align-items-center">
-          <div class="col-md-4 border-right border-dark">
+        <div class="row pt-4 pb-0 my-0 py-5 d-flex align-items-center">
+          <!-- Column 1: Image -->
+          <div
+            class="col-12 col-md-4 d-flex justify-content-center mb-4 mb-md-0"
+          >
             <div class="bg-white">
-              <div class="circle-container mx-auto">
+              <div class="circle-container">
                 <img
                   src="images/lindat.jpg"
                   class="img-fluid rounded-circle"
@@ -111,7 +113,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-8 px-5">
+          <!-- Column 2: Text -->
+          <div class="col-12 col-md-8">
             <div class="bg-white">
               <p class="text-left mx-auto">
                 After retiring from a 35+ year career as a developer for
@@ -129,6 +132,7 @@
           </div>
         </div>
       </div>
+
       <!-- wavy line on bottom.  made the viewport 249 instead of 250 to avoid overlapping grey line that was shown -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 230">
         <path
