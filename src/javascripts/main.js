@@ -28,3 +28,11 @@ document.getElementById("submitButton").addEventListener("click", function () {
   var alertElement = document.getElementById("successAlert");
   alertElement.classList.remove("d-none"); // Remove the d-none class to show the alert
 });
+
+//preload hero image
+function preload_image(im_url) {
+  let img = new Image();
+  img.src = im_url;
+}
+
+preload_image("/images/intro-section-hands-typing-unsplash.jpg");
