@@ -15,5 +15,5 @@ TODO: List here all the changes you made to given template to adapt it to your n
 * modified form with new text and images, and added form submit success message
 * implemented the portfolio filter button for school and production data-categories
 * changed all text to reflect my work and bio information
-
+* checked for responsive behaviors
 
