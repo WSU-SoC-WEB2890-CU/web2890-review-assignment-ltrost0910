@@ -36,6 +36,7 @@
 
     .caption {
       text-align: center;
+      font-weight: bold;
       color: $white;
       @include absoluteCenter;
 
@@ -56,6 +57,14 @@
       opacity: 1;
       visibility: visible;
       @include transitionProperty;
+    }
+  }
+
+  // Media query for mobile devices
+  @media (max-width: 768px) {
+    .portfolio-info {
+      opacity: 1;
+      visibility: visible;
     }
   }
 }
