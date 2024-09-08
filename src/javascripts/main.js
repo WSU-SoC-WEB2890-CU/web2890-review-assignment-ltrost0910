@@ -35,4 +35,4 @@ function preload_image(im_url) {
   img.src = im_url;
 }
 
-preload_image("/images/intro-section-hands-typing-unsplash.jpg");
+preload_image("/images/intro-section-hands-typing-unsplash.webp");
