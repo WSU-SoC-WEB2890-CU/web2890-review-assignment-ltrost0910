@@ -1,1 +1,20 @@
 TODO: List here all the changes you made to given template to adapt it to your needs
+
+* removed companies, testimonials, and other items that didn't apply to me.
+* changed color scheme
+* created new svg section break design 
+* added hero image on first section, with background gradient.  not sure why I can't get it to load faster.
+* updated scss to handle new hero image
+* added rounded circle profile image in multiple places
+* added media query to portfolio section to show the link and text that appears on hover in desktop
+* changed all portfolio items to my own, pulling down new screenshots and retrieving logo images where available.
+* removed old unused images folders and cleaned up code.
+* modified navbar and footer to remove phone numbers and company information
+* changed header width
+* added anchor tags and button link for "Get In Touch" button on hero
+* modified form with new text and images, and added form submit success message
+* implemented the portfolio filter button for school and production data-categories
+* changed all text to reflect my work and bio information
+* checked for responsive behaviors
+* worked on making the section header spacing consistent
+* ran npm run deploy to get dist folder created

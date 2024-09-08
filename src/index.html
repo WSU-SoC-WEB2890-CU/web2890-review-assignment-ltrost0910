@@ -7,17 +7,17 @@
     <meta name="robots" content="index,follow" />
     <meta name="description" content="A portfolio of work by Linda Trost" />
     <title>Linda Trost Portfolio</title>
-
     <link rel="stylesheet" href="./stylesheets/main.scss" />
   </head>
 
   <body>
     <!-- THE NAVBAR SECTION -->
     <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
-      <div class="container">
+      <div class="container-fluid mx-3">
         <a class="navbar-brand" href="#">
           <img src="images/logo.png" alt="logo image" />
         </a>
+        <h1 class="fw-light text-white">Trost Portfolio</h1>
         <button
           class="navbar-toggler"
           type="button"
@@ -47,79 +47,74 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
-          <button type="button" class="rounded-pill btn-rounded">
-            801-391-2914
-            <span>
-              <i class="bi bi-telephone-fill"></i>
-            </span>
-          </button>
         </div>
       </div>
     </nav>
 
     <!-- THE INTRO SECTION -->
     <section id="home" class="intro-section">
-      <div class="container">
-        <div class="row align-items-center text-white">
-          <div class="col-md-12 text-center">
-            <h1 class="display-2">
-              <span class="display-2--intro fw-light">Welcome!</span>
-              <span class="display-2--description lh-base px-3">
-                My name is Linda Trost.<br />I provide web solutions for small
-                businesses and non-profit organizations using HTML, WordPress
-                and Wix in Ogden, Utah.
-              </span>
-            </h1>
-            <div class="d-flex justify-content-center pt-4">
-              <button type="button" class="rounded-pill btn-rounded">
-                Get in Touch
-                <span><i class="bi bi-arrow-right"></i></span>
-              </button>
+      <div class="hero">
+        <div class="container">
+          <div class="row align-items-center text-white">
+            <div class="col-md-12 text-center">
+              <h1 class="display-2">
+                <span class="display-2--intro fw-light">Welcome!</span>
+                <span class="display-2--description lh-base px-3">
+                  My name is Linda Trost.<br />I provide web solutions for small
+                  businesses and non-profit organizations using HTML, WordPress
+                  and Wix in Ogden, Utah.
+                </span>
+              </h1>
+              <div class="d-flex justify-content-center pt-4">
+                <a class="btn rounded-pill btn-rounded" href="#contact">
+                  Get in Touch
+                  <span><i class="bi bi-arrow-right"></i></span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+        <!-- wavy line on bottom.  made the viewport 249 instead of 250 to avoid overlapping grey line that was shown -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 230">
+          <path
+            class="primary-color-fill"
+            fill-opacity="1"
+            d="M0,64L48,90.7C96,117,192,171,288,192C384,213,480,203,576,170.7C672,139,768,85,864,96C960,107,1056,181,1152,229.3C1248,277,1344,299,1392,250L1440,250L1440,250L1392,250C1344,250,1248,250,1152,250C1056,250,960,250,864,250C768,250,672,250,576,250C480,250,384,250,288,250C192,250,96,250,48,250L0,250Z"
+          ></path>
+          <path
+            class="secondary-color-fill"
+            fill-opacity="1"
+            d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,250L1392,250C1344,250,1248,250,1152,250C1056,250,960,250,864,250C768,250,672,250,576,250C480,250,384,250,288,250C192,250,96,250,48,250L0,250Z"
+          ></path>
+        </svg>
       </div>
-      <!-- wavy white line on bottom -->
-      <!-- ltbluelight is #20b2c9 -->
-      <!-- made the viewport 249 instead of 250 to avoid overlapping grey line that was shown -->
-      <!-- trying to use $primary and $secondary color definitions  -->
-      <!-- $ltblue-dark: #0d3a50; $ltblue-light: #20b2c9;        -->
-      <!-- fill="#20b2c9" -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 249">
-        <path
-          class="secondary-color-fill"
-          fill-opacity=".5"
-          d="M0,64L48,90.7C96,117,192,171,288,192C384,213,480,203,576,170.7C672,139,768,85,864,96C960,107,1056,181,1152,229.3C1248,277,1344,299,1392,250L1440,250L1440,250L1392,250C1344,250,1248,250,1152,250C1056,250,960,250,864,250C768,250,672,250,576,250C480,250,384,250,288,250C192,250,96,250,48,250L0,250Z"
-        ></path>
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,250L1392,250C1344,250,1248,250,1152,250C1056,250,960,250,864,250C768,250,672,250,576,250C480,250,384,250,288,250C192,250,96,250,48,250L0,250Z"
-        ></path>
-      </svg>
     </section>
 
     <!-- THE ABOUT SECTION -->
     <section id="about">
-      <!-- <div class="container border border-primary p-5"> -->
-      <div class="container">
+      <div class="container pt-5 px-5 pb-0 mb-0">
         <div class="row text-center">
           <h1 class="display-3 fw-bold">About</h1>
           <div class="heading-line mb-4"></div>
         </div>
-        <div class="row pt-2 pb-2 mt-0 mb-3 align-items-center">
-          <div class="col-md-4 border-right">
+        <div class="row pt-4 pb-0 my-0 py-5 d-flex align-items-center">
+          <!-- Column 1: Image -->
+          <div
+            class="col-12 col-md-4 d-flex justify-content-center mb-4 mb-md-0"
+          >
             <div class="bg-white">
-              <div class="circle-container mx-auto">
+              <div class="circle-container">
                 <img
                   src="images/lindat.jpg"
                   class="img-fluid rounded-circle"
                   alt="Your Image"
+                  loading="lazy"
                 />
               </div>
             </div>
           </div>
-          <div class="col-md-8 px-5">
+          <!-- Column 2: Text -->
+          <div class="col-12 col-md-8">
             <div class="bg-white">
               <p class="text-left mx-auto">
                 After retiring from a 35+ year career as a developer for
@@ -137,9 +132,9 @@
           </div>
         </div>
       </div>
-      <!-- trying to use $primary and $secondary color definitions  -->
-      <!-- $ltblue-dark: #0d3a50; $ltblue-light: #20b2c9;        -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 249">
+
+      <!-- wavy line on bottom.  made the viewport 249 instead of 250 to avoid overlapping grey line that was shown -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 230">
         <path
           class="primary-color-fill"
           fill-opacity="1"
@@ -155,16 +150,16 @@
 
     <!-- THE PORTFOLIO -->
     <section id="portfolio" class="portfolio">
-      <div class="container">
-        <div class="row text-center mt-1">
-          <h1 class="display-3 fw-bold text-capitalize">Portfolio</h1>
-          <div class="heading-line"></div>
+      <div class="container pt-5 px-5 pb-0 mb-0">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold">Portfolio</h1>
+          <div class="heading-line mb-4"></div>
           <p class="lead">
-            Take a look below for some samples of my class projects and
-            production sites.
+            Hover or tap on the selections below to view my class projects and
+            live production sites.
           </p>
         </div>
-        <div class="row mt-5 mb-4 g-3 text-center">
+        <div class="row mt-4 mb-4 g-3 text-center">
           <div class="col-md-12">
             <button
               class="btn btn-outline-primary"
@@ -178,14 +173,14 @@
               type="button"
               data-filter="school"
             >
-              School Projects
+              School
             </button>
             <button
               class="btn btn-outline-primary"
               type="button"
               data-filter="production"
             >
-              Production Sites
+              Production
             </button>
           </div>
         </div>
@@ -194,31 +189,47 @@
           <div class="col-lg-4 col-md-6" data-category="school">
             <div class="portfolio-box shadow">
               <img
-                src="images/portfolio/portfolio-1.jpg"
+                src="images/portfolio/recipe-box.png"
                 alt="portfolio 1 image"
                 title="portfolio 1 picture"
                 class="img-fluid"
+                loading="lazy"
               />
               <div class="portfolio-info">
                 <div class="caption">
-                  <h4>Project 1 name goes here</h4>
+                  <h4>Recipe Box</h4>
                   <p>School category project</p>
+                  <a
+                    class="btn btn-primary text-white"
+                    href="https://chimerical-cannoli-52c5a0.netlify.app/"
+                    target="_blank"
+                    >Link</a
+                  >
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-category="production">
             <div class="portfolio-box shadow">
-              <img
-                src="images/portfolio/portfolio-2.jpg"
-                alt="portfolio 2 image"
-                title="portfolio 2 picture"
-                class="img-fluid"
-              />
+              <div class="circle-container mt-3 mx-auto">
+                <img
+                  src="https://www.gsdoc.org/wp-content/uploads/2020/02/GSDOC_LOGO2.jpg"
+                  alt="GSDOC Logo"
+                  title="GSDOC Logo"
+                  class="img-fluid"
+                  loading="lazy"
+                />
+              </div>
               <div class="portfolio-info">
                 <div class="caption">
-                  <h4>Project 2 name goes here</h4>
+                  <h4>Golden Spike Dog Obedience Club</h4>
                   <p>Production category project</p>
+                  <a
+                    class="btn btn-primary text-white"
+                    href="https://gsdoc.org"
+                    target="_blank"
+                    >Link</a
+                  >
                 </div>
               </div>
             </div>
@@ -226,31 +237,47 @@
           <div class="col-lg-4 col-md-6" data-category="school">
             <div class="portfolio-box shadow">
               <img
-                src="images/portfolio/portfolio-3.jpg"
+                src="images/portfolio/meal-app.png"
                 alt="portfolio 3 image"
                 title="portfolio 3 picture"
                 class="img-fluid"
+                loading="lazy"
               />
               <div class="portfolio-info">
                 <div class="caption">
-                  <h4>Project 3 name goes here</h4>
+                  <h4>Meal App</h4>
                   <p>School category project</p>
+                  <a
+                    class="btn btn-primary text-white"
+                    href="https://melodic-kitsune-fe0594.netlify.app/"
+                    target="_blank"
+                    >Link</a
+                  >
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-category="production">
             <div class="portfolio-box shadow">
-              <img
-                src="images/portfolio/portfolio-4.jpg"
-                alt="portfolio 4 image"
-                title="portfolio 4 picture"
-                class="img-fluid"
-              />
+              <div class="circle-container mt-3 mx-auto">
+                <img
+                  src="https://static.wixstatic.com/media/38398f_a3a3d814ab994532aceae48a17c56dd1~mv2.png"
+                  alt="Weber Democrats Logo"
+                  title="Weber Democrats Logo"
+                  class="img-fluid p-3"
+                  loading="lazy"
+                />
+              </div>
               <div class="portfolio-info">
                 <div class="caption">
-                  <h4>Project 4 name goes here</h4>
+                  <h4>Weber Democratic Party</h4>
                   <p>Production category project</p>
+                  <a
+                    class="btn btn-primary text-white"
+                    href="https://www.weberdemocrats.org/"
+                    target="_blank"
+                    >Link</a
+                  >
                 </div>
               </div>
             </div>
@@ -258,15 +285,22 @@
           <div class="col-lg-4 col-md-6" data-category="school">
             <div class="portfolio-box shadow">
               <img
-                src="images/portfolio/portfolio-5.jpg"
+                src="images/portfolio/weather-app.png"
                 alt="portfolio 5 image"
                 title="portfolio 5 picture"
                 class="img-fluid"
+                loading="lazy"
               />
               <div class="portfolio-info">
                 <div class="caption">
-                  <h4>Project 5 name goes here</h4>
+                  <h4>Weather App</h4>
                   <p>School category project</p>
+                  <a
+                    class="btn btn-primary text-white"
+                    href="https://cosmic-cocada-a46c04.netlify.app/"
+                    target="_blank"
+                    >Link</a
+                  >
                 </div>
               </div>
             </div>
@@ -274,55 +308,75 @@
           <div class="col-lg-4 col-md-6" data-category="school">
             <div class="portfolio-box shadow">
               <img
-                src="images/portfolio/portfolio-6.jpg"
+                src="images/portfolio/wonderful-quotes.png"
                 alt="portfolio 6 image"
                 title="portfolio 6 picture"
                 class="img-fluid"
+                loading="lazy"
               />
               <div class="portfolio-info">
                 <div class="caption">
-                  <h4>Project 6 name goes here</h4>
+                  <h4>Wonderful Quotes</h4>
                   <p>School category project</p>
+                  <a
+                    class="btn btn-primary text-white"
+                    href="https://musical-brigadeiros-86afa7.netlify.app/"
+                    target="_blank"
+                    >Link</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- wavy line on bottom.  made the viewport 249 instead of 250 to avoid overlapping grey line that was shown -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 230">
+        <path
+          class="primary-color-fill"
+          fill-opacity="1"
+          d="M0,64L48,90.7C96,117,192,171,288,192C384,213,480,203,576,170.7C672,139,768,85,864,96C960,107,1056,181,1152,229.3C1248,277,1344,299,1392,250L1440,250L1440,250L1392,250C1344,250,1248,250,1152,250C1056,250,960,250,864,250C768,250,672,250,576,250C480,250,384,250,288,250C192,250,96,250,48,250L0,250Z"
+        ></path>
+        <path
+          class="secondary-color-fill"
+          fill-opacity="1"
+          d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,250L1392,250C1344,250,1248,250,1152,250C1056,250,960,250,864,250C768,250,672,250,576,250C480,250,384,250,288,250C192,250,96,250,48,250L0,250Z"
+        ></path>
+      </svg>
     </section>
 
     <!-- THE CONTACT SECTION -->
     <section id="contact" class="contact">
-      <div class="container">
+      <div class="container pt-5 px-5 pb-0 mb-0">
         <div class="row text-center">
-          <h1 class="display-3 fw-bold text-capitalize">Contact</h1>
-          <div class="heading-line"></div>
-          <p class="lh-lg">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-            illum architecto modi.
+          <h1 class="display-3 fw-bold">Contact</h1>
+          <div class="heading-line mb-4"></div>
+          <p class="lh-lg mb-4">
+            Reach out to me for more information about my work.
           </p>
         </div>
 
-        <div class="row text-white">
-          <div class="col-12 col-lg-6 gradient shadow p-3">
-            <div class="cta-info w-100">
-              <h4 class="display-4 fw-bold">100% Satisfaction Guaranteed</h4>
+        <div class="row text-white pb-4">
+          <div class="col-12 col-lg-6 gradient shadow pb-5">
+            <div class="cta-info w-100 pb-1">
+              <h4 class="display-4 fw-bold">Linda Trost</h4>
               <p class="lh-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-                alias optio minima, tempore architecto sint ipsam dolore tempora
-                facere laboriosam corrupti!
+                I can be reached via school email at linda.trost@mail.weber.edu,
+                or fill out the form and I'll get back to you soon!
               </p>
-              <h3 class="display-3--brief">What will be the next step?</h3>
-              <ul class="cta-info__list">
-                <li>We'll prepare the proposal.</li>
-                <li>we'll discuss it together.</li>
-                <li>let's start the discussion.</li>
-              </ul>
+            </div>
+            <div class="circle-container m-auto">
+              <img
+                src="images/lindat.jpg"
+                class="img-fluid rounded-circle"
+                alt="Your Image"
+                loading="lazy"
+              />
             </div>
           </div>
           <div class="col-12 col-lg-6 bg-white shadow p-3">
             <div class="form w-100 pb-2">
-              <h4 class="display-3--title mb-5">start your project</h4>
+              <h4 class="display-3--title mb-5">Let's get in touch:</h4>
               <form action="#" class="row">
                 <div class="col-lg-6 col-md mb-3">
                   <input
@@ -353,20 +407,36 @@
                     name="message"
                     placeholder="Message"
                     id="message"
-                    rows="8"
+                    rows="4"
                     class="shadow form-control form-control-lg"
                   ></textarea>
                 </div>
-                <div class="text-center d-grid mt-1">
+                <div class="text-center d-grid mt-5">
                   <button
                     type="button"
                     class="btn btn-primary rounded-pill pt-3 pb-3"
+                    id="submitButton"
                   >
                     submit
                     <i class="bi bi-send"></i>
                   </button>
                 </div>
               </form>
+
+              <!-- Hidden Bootstrap alert element -->
+              <div
+                class="alert alert-success alert-dismissible fade show mt-3 d-none"
+                role="alert"
+                id="successAlert"
+              >
+                Success! Your form has been submitted.
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                  aria-label="Close"
+                ></button>
+              </div>
             </div>
           </div>
         </div>
@@ -374,169 +444,22 @@
     </section>
     <!-- THE FOOTER SECTION -->
     <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex"
-          >
-            <div class="contact-box__icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-phone-call"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path
-                  d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
-                />
-                <path d="M15 7a2 2 0 0 1 2 2" />
-                <path d="M15 3a6 6 0 0 1 6 6" />
-              </svg>
-            </div>
-            <div class="contact-box__info">
-              <a href="#" class="contact-box__info--title">801-391-2914</a>
-              <p class="contact-box__info--subtitle">Mon-Fri 9am-6pm</p>
-            </div>
-          </div>
-          <div
-            class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex"
-          >
-            <div class="contact-box__icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-mail-opened"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <polyline points="3 9 12 15 21 9 12 3 3 9" />
-                <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
-                <line x1="3" y1="19" x2="9" y2="13" />
-                <line x1="15" y1="13" x2="21" y2="19" />
-              </svg>
-            </div>
-            <div class="contact-box__info">
-              <a href="#" class="contact-box__info--title">info@company.com</a>
-              <p class="contact-box__info--subtitle">Online support</p>
-            </div>
-          </div>
-          <div
-            class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex"
-          >
-            <div class="contact-box__icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-map-2"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <line x1="18" y1="6" x2="18" y2="6.01" />
-                <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
-                <polyline
-                  points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15"
-                />
-                <line x1="9" y1="4" x2="9" y2="17" />
-                <line x1="15" y1="15" x2="15" y2="20" />
-              </svg>
-            </div>
-            <div class="contact-box__info">
-              <a href="#" class="contact-box__info--title">Ogden</a>
-              <p class="contact-box__info--subtitle">Utah, 84405</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-sm" style="background-color: #212121">
-        <div class="container">
-          <div class="row py-4 text-center text-white">
-            <div class="col-lg-12 col-md-6">
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-github"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container mt-5">
-        <div class="row text-white justify-content-center mt-3 pb-3">
-          <div class="col-12 col-sm-6 col-lg-6 mx-auto">
-            <h5 class="text-capitalize fw-bold">Company name</h5>
-            <hr
-              class="bg-secondary d-inline-block mb-4"
-              style="width: 100%; height: 2px"
-            />
-            <p class="lh-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              ex obcaecati blanditiis reprehenderit ab mollitia voluptatem
-              consectetur?
-            </p>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-            <h5 class="text-capitalize fw-bold">Products</h5>
-            <hr
-              class="bg-secondary d-inline-block mb-4"
-              style="width: 100%; height: 2px"
-            />
-            <ul class="list-inline company-list">
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">Lorem ipsum</a></li>
-            </ul>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-            <h5 class="text-capitalize fw-bold">useful links</h5>
-            <hr
-              class="bg-secondary d-inline-block mb-4"
-              style="width: 100%; height: 2px"
-            />
-            <ul class="list-inline company-list">
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">Lorem ipsum</a></li>
-            </ul>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-            <h5 class="text-capitalize fw-bold">contact</h5>
-            <hr
-              class="bg-secondary d-inline-block mb-4"
-              style="width: 100%; height: 2px"
-            />
-            <ul class="list-inline company-list">
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">Lorem ipsum</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom pt-5 pb-5">
+      <div class="footer-bottom pt-2 pb-4">
         <div class="container">
           <div class="row text-center text-white">
             <div class="col-12">
               <div class="footer-bottom__copyright">
-                &COPY; Copyright 2022 <a href="#">Company</a> | Created by
+                <!-- &COPY; Copyright 2022 <a href="#">Company</a> | Created by
                 <a href="http://codewithpatrick.com" target="_blank"
                   >Name Goes Here</a
-                >
+                > -->
+                <p class="text-center text-white">
+                  Copyright &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  Linda Trost. All Rights Reserved
+                </p>
               </div>
             </div>
           </div>
@@ -544,7 +467,10 @@
       </div>
     </footer>
 
-    <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+    <a
+      href="#"
+      class="shadow btn-primary rounded-circle back-to-top border border-white"
+    >
       <i class="bi bi-chevron-up"></i>
     </a>
 
