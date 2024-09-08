@@ -17,3 +17,4 @@ TODO: List here all the changes you made to given template to adapt it to your n
 * changed all text to reflect my work and bio information
 * checked for responsive behaviors
 * worked on making the section header spacing consistent
+* ran npm run deploy to get dist folder created
